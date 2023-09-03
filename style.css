@@ -1,0 +1,361 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto Slab', serif;
+}
+
+nav {
+    overflow: hidden;
+    width: 100%;
+    background: linear-gradient(to bottom right, #043156, #8b4e5e);
+    position: fixed;
+    top: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: white;
+    /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2); */
+}
+
+nav .Mypage {
+    font-size: 1.rem;
+    width: 50%;
+    left: -35px;
+    position: relative;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 7px;
+}
+
+nav .logo img {
+    padding-top: 20px;
+    width: 60px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    padding: 10px 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: 0.15s;
+}
+
+nav a:hover {
+    color: #326d6c;
+}
+
+#nav-button {
+    display: none;
+}
+
+label {
+    display: none;    
+}
+
+header img {
+    padding: 10px 0px;
+    box-sizing: border-box;
+    top: 60px;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+section img {
+    padding: 10px 0px;
+    box-sizing: border-box;
+    top: 60px;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}  
+
+
+
+/* responsive */
+
+@media only screen and (max-width: 736px) and (orientation: portrait) {
+
+    nav {
+        align-items: center;
+    }
+
+    nav .logo {
+        width: 30%;
+        position: absolute;
+        left: 0px;
+    }
+
+    nav .logo img {
+        padding-top: 20px;    
+    }
+
+    nav ul {
+        position: fixed;
+        top: 44px;
+        width: 100%;
+        background: #37547c;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    nav li {
+        display: block;
+        width: 100%;
+        padding: 5px;
+    }
+
+    nav a {
+        width: 100%;
+        display: block;
+    }
+
+    nav li:hover {
+        background: #5D7599;
+    }
+
+    label {
+        display: block;
+        padding: 0px 10px;
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        right: 2%;
+    }
+
+    label:hover {
+        color: white;
+    }
+
+    nav #nav-button:checked~ul {
+        max-height: 100%;
+        transition: all 1s ease-out;
+    }
+
+}
+  
+/* .body {
+    height: 4000px;
+    width: 100%;
+    position: relative;
+    margin: 0px auto;
+    background-color: #fdfdfd;
+  } */
+
+.utama {
+    width: 100%;
+    height: 900px;
+    background-color: #031e4b;
+    text-align: center;
+    padding-top: 300px;
+    color: white;
+}
+.wrap {
+    margin: auto;
+    width: 100%;
+    /* font-size: 10px; */
+}
+
+.wrap .utama .lingkaran_1 {
+    width: 25px;
+    height: 25px;
+    background-color: #ff7b89;
+    border-radius: 100%;
+    margin-left: 20%;
+    border: 1px solid white;
+}
+
+.wrap .utama .lingkaran_2 {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    background-color: #ff7b89;
+    border-radius: 100%;
+    margin-left: 20%;
+    border: 1px solid w;
+}
+
+.wrap .utama .lingkaran_3 {
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+    background-color: #ff7b89;
+    border-radius: 100%;
+    margin-left: 20%;
+    border: 1px solid white;
+}
+
+.wrap .utama .lingkaran_4 {
+    width: 10px;
+    height: 10px;
+    margin-top: 10px;
+    background-color: #ff7b89;
+    border-radius: 100%;
+    margin-left: 20%;
+    border: 1px solid white;
+}
+
+.wrap .utama .lingkaran_5 {
+    width: 5px;
+    height: 5px;
+    margin-top: 10px;
+    background-color: #ff7b89;
+    border-radius: 100%;
+    margin-left: 20%;
+    border: 1px solid white;
+}
+
+
+.wrap .utama h3 {
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 5px;
+}
+
+.wrap .utama .lingkaran_6 {
+    width: 25px;
+    height: 25px;
+    background-color: #ff7b89;
+    border-radius: 100%;
+    margin-left: 80%;
+    border: 1px solid white;
+}
+
+.wrap .utama .lingkaran_7 {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    background-color: #ff7b89;
+    border-radius: 100%;
+    margin-left: 80%;
+    border: 1px solid white;
+}
+
+.wrap .utama .lingkaran_8 {
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+    background-color: #ff7b89;
+    border-radius: 100%;
+    margin-left: 80%;
+    border: 1px solid white;
+}
+
+.wrap .utama .lingkaran_9 {
+    width: 10px;
+    height: 10px;
+    margin-top: 10px;
+    background-color: #ff7b89;
+    border-radius: 100%;
+    margin-left: 80%;
+    border: 1px solid white;
+}
+
+.wrap .utama .lingkaran_10 {
+    width: 5px;
+    height: 5px;
+    margin-top: 10px;
+    background-color: #ff7b89;
+    border-radius: 100%;
+    margin-left: 80%;
+    border: 1px solid white;
+}
+
+.about {
+    width: 100%;
+    height: 900px;
+    justify-content: center;
+}
+
+.about .aboutMe h1 {
+    margin-left: 45%;
+    font-weight: bold;
+}
+
+.about .photo {
+    width: 200px;
+    height: 200px;
+    background-image: url(img/foto.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+    margin-left: 45%;
+} 
+
+.about .profile h3 {
+    margin-left: 100px;
+    line-height: 100px;
+}
+
+.about .profile p {
+    margin-left: 60px;
+    line-height: 50px;
+}
+
+.about .profile .air{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #273248;
+    margin-left: 49.5%;
+
+}
+
+.about .profile .air .bulat {
+    width: 15px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #cfdfff;
+    margin-left: 10px;
+}
+
+.about .profile .persegi2 {
+    width: 10px;
+    height: 10px;
+    background-color: #112731;
+    margin-left: 50%;
+
+}
+
+.about .profile h3 {
+    font-weight: bold;
+}
+.about .profile .container .row .col-sm ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.bg-gradient-light {
+    width: 100%;
+    height: 900px;
+}
+
+.bg-gradient-light .container h2 {
+    font-weight: bold;
+}
+
+.bg-gradient-light .container .row h3 {
+    font-weight: bold;
+}
+
+
+.bg-light {
+    width: 100%;
+    height: 900px;
+}
+
+.bg-light .container h2 {
+    font-weight: bold;
+}
